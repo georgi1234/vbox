@@ -1,0 +1,9 @@
+#VirtualBox 7.0.6 Oracle VM VirtualBox Extension Pack
+#link to Download
+#https://download.virtualbox.org/virtualbox/7.0.6/Oracle_VM_VirtualBox_Extension_Pack-7.0.6a-155176.vbox-extpack
+wget https://download.virtualbox.org/virtualbox/7.0.6/Oracle_VM_VirtualBox_Extension_Pack-7.0.6a-155176.vbox-extpack
+#install package from virtualbox UI
+dpkg -l | grep virtualbox-dkms
+sudo apt-get purge virtualbox-dkms && \
+sudo apt-get install dkms
+sudo /sbin/vboxconfig 
